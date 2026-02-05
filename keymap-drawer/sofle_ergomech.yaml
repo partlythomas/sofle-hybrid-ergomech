@@ -1,9 +1,10 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
+  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, '`', Q, W, E, R, T, Y, U, I, O, P, AltGr+A, TAB, A, S, D, F, G, H, J, K, L, AltGr+O,
+    AltGr+', LSHFT, Z, X, C, V, B, N, M, ',', ., /, RSHFT, Ctl+UP ARROW, LCTRL, LALT, LEFT WIN, lower, SPACE, ENTER, raise, '-', RALT, RCMD, ENTER, RIGHT, UP ARROW,
+    LEFT, DOWN]
   lower:
-  - '&studio_unlock'
+  - Ctl+Gui+Q
   - F1
   - F2
   - F3
@@ -15,24 +16,24 @@ layers:
   - F9
   - F10
   - F11
-  - '`'
+  - '~'
   - '1'
   - '2'
   - '3'
-  - '4'
-  - '5'
+  - EP TOG
+  - Sft+Gui+4
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
   - F12
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - '&caps_word'
+  - '&Search_ff_tabs'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - Gui+Ctl+SPACE
   - ^
   - '&'
   - '*'
@@ -51,7 +52,7 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -62,59 +63,59 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - ''
+  - FAST FORWARD
+  - PLAY PAUSE
+  - REWIND
+  - PLAY PAUSE
   raise:
-  - BT CLR
+  - POWER
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - BT CLR
+  - EP TOG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - DELETE
+  - '|'
   - INS
   - PSCRN
   - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
   - {t: ▽, type: trans}
-  - UP
   - {t: ▽, type: trans}
-  - '0'
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+DELETE
+  - Alt+BACKSPACE
   - {t: ▽, type: trans}
   - LALT
   - LCTRL
-  - LSHFT
   - {t: ▽, type: trans}
-  - CLCK
-  - PG DN
+  - {t: ▽, type: trans}
+  - ''
   - LEFT
   - DOWN
+  - UP ARROW
   - RIGHT
-  - DEL
-  - BSPC
+  - {t: ▽, type: trans}
+  - ''''
   - {t: ▽, type: trans}
   - UNDO
   - CUT
   - COPY
   - PASTE
   - {t: ▽, type: trans}
+  - <
+  - '>'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -127,11 +128,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - {t: ▽, type: trans}
+  - END
+  - PAGE UP
+  - HOME
+  - PAGE DOWN
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -157,12 +158,19 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - RGB BRD
   - RGB BRI
   - ''
   - ''
   - ''
+  - END
+  - PG DN
+  - PG UP
+  - HOME
+  - ''
+  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -173,27 +181,24 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
   - RGB TOG
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - ''
   - ''
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
-  - A
-  - B
-  - C
-  - D
-  - E
+  - ''
+  - ''
+combos:
+- p: [27, 28]
+  k: '&mkp MCLK'
+  l: [lower]
