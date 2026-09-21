@@ -28,7 +28,7 @@ layers:
   - '9'
   - '0'
   - F12
-  - '&caps_word'
+  - Sft+Alt+DOWN
   - '&Search_ff_tabs'
   - '&mkp MCLK'
   - '&mkp RCLK'
@@ -93,7 +93,7 @@ layers:
   - {t: ▽, type: trans}
   - Alt+DELETE
   - Alt+BACKSPACE
-  - {t: ▽, type: trans}
+  - Sft+Alt+UP ARROW
   - LALT
   - LCTRL
   - {t: ▽, type: trans}
