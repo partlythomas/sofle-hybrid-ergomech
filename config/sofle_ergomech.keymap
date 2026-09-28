@@ -64,11 +64,13 @@
         tab_updown_down {
             bindings = <&tab_updown_ff_down>;
             key-positions = <52 24>;
+            layers = <1 0>;
         };
 
         tab_updown_up {
             bindings = <&tab_updown_ff_up>;
             key-positions = <52 24 47>;
+            layers = <1 0>;
         };
     };
 
