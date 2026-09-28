@@ -28,7 +28,7 @@ layers:
   - '9'
   - '0'
   - F12
-  - Sft+Alt+DOWN
+  - {t: ▽, type: trans}
   - '&Search_ff_tabs'
   - '&mkp MCLK'
   - '&mkp RCLK'
@@ -93,7 +93,7 @@ layers:
   - {t: ▽, type: trans}
   - Alt+DELETE
   - Alt+BACKSPACE
-  - Sft+Alt+UP ARROW
+  - {t: ▽, type: trans}
   - LALT
   - LCTRL
   - {t: ▽, type: trans}
@@ -202,3 +202,7 @@ combos:
 - p: [27, 28]
   k: '&mkp MCLK'
   l: [lower]
+- p: [52, 24]
+  k: '&tab_updown_ff_down'
+- p: [52, 24, 47]
+  k: '&tab_updown_ff_up'
