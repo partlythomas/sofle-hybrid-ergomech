@@ -39,8 +39,7 @@
         tab_updown_ff_down: tab_updown_ff {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(DOWN))>, <&macro_press>;
-
+            bindings = <&kp LS(LA(DOWN))>;
             label = "TAB_UPDOWN_FF";
         };
 
