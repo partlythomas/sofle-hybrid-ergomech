@@ -204,5 +204,7 @@ combos:
   l: [lower]
 - p: [52, 24]
   k: '&tab_updown_ff_down'
+  l: [lower, default]
 - p: [52, 24, 47]
   k: '&tab_updown_ff_up'
+  l: [lower, default]
