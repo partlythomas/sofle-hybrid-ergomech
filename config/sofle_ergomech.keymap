@@ -59,18 +59,6 @@
             key-positions = <27 28>;
             layers = <1>;
         };
-
-        tab_updown_down {
-            bindings = <&tab_updown_ff_down>;
-            key-positions = <52 24>;
-            layers = <1 0>;
-        };
-
-        tab_updown_up {
-            bindings = <&tab_updown_ff_up>;
-            key-positions = <52 24 47>;
-            layers = <1 0>;
-        };
     };
 
     keymap {
@@ -112,12 +100,12 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp LC(LG(Q))  &kp F1           &kp F2     &kp F3     &kp F4             &kp F5                &kp F6     &kp F7              &kp F8            &kp F9        &kp F10           &kp F11
-&kp TILDE      &kp N1           &kp N2     &kp N3     &ext_power EP_TOG  &kp LS(LG(NUMBER_4))  &kp N6     &kp N7              &kp N8            &kp N9        &kp N0            &kp F12
-&trans         &Search_ff_tabs  &mkp MCLK  &mkp RCLK  &mkp LCLK          &kp LG(LC(SPACE))     &kp CARET  &kp AMPS            &kp ASTRK         &kp LPAR      &kp RPAR          &kp PIPE
-&trans         &kp EQUAL        &kp MINUS  &kp PLUS   &kp LBRC           &kp RBRC              &kp LBKT   &kp RBKT            &kp SEMI          &kp COLON     &kp BSLH          &trans
-&kp K_MUTE     &trans           &trans     &trans     &trans             &trans                &trans     &trans              &trans            &trans        &trans
-                                                                                               &none      &kp C_FAST_FORWARD  &kp C_PLAY_PAUSE  &kp C_REWIND  &kp C_PLAY_PAUSE
+&kp LC(LG(Q))        &kp F1           &kp F2     &kp F3     &kp F4             &kp F5                &kp F6     &kp F7              &kp F8            &kp F9        &kp F10           &kp F11
+&kp TILDE            &kp N1           &kp N2     &kp N3     &ext_power EP_TOG  &kp LS(LG(NUMBER_4))  &kp N6     &kp N7              &kp N8            &kp N9        &kp N0            &kp F12
+&tab_updown_ff_down  &Search_ff_tabs  &mkp MCLK  &mkp RCLK  &mkp LCLK          &kp LG(LC(SPACE))     &kp CARET  &kp AMPS            &kp ASTRK         &kp LPAR      &kp RPAR          &kp PIPE
+&tab_updown_ff_up    &kp EQUAL        &kp MINUS  &kp PLUS   &kp LBRC           &kp RBRC              &kp LBKT   &kp RBKT            &kp SEMI          &kp COLON     &kp BSLH          &trans
+&kp K_MUTE           &trans           &trans     &trans     &trans             &trans                &trans     &trans              &trans            &trans        &trans
+                                                                                                     &none      &kp C_FAST_FORWARD  &kp C_PLAY_PAUSE  &kp C_REWIND  &kp C_PLAY_PAUSE
             >;
 
             sensor-bindings =
